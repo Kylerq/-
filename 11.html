@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Защита от DDoS-атак</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+    
     <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Поиск по сайту..." class="search-input">
+                        <button class="search-btn">
+                            <i class="icon ion-md-search"></i>
+                        </button>
+                    </div>
+                    <button class="subscribe-btn" id="subscribeBtn">
+                        <span class="subscribe-text">Подписаться</span>
+                        <i class="icon ion-md-notifications"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Остальной контент хедера -->
+        </div>
         <div class="container">
             <div class="logo">
                 <img src="img/1.png" alt="Логотип Защита от DDoS-атак">
@@ -17,36 +37,256 @@
             <a href="#services" class="btn">Узнать больше</a>
         </div>
     </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>О нас</h2>
-            <p>Мы — лидеры в области защиты от DDoS-атак с многолетним опытом. Наши решения помогают компаниям по всему миру защитить свои ресурсы от киберугроз.</p>
+    <!-- Добавьте этот код в нужном разделе (например, после хедера) -->
+<section class="slider-section">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h3>Защита премиум-класса</h3>
+                    <p>Многоуровневая система фильтрации трафика с ИИ</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                <img src="img/slide1.jpg" alt="Защита серверов">
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>Круглосуточный мониторинг</h3>
+                    <p>24/7 наблюдение за вашей инфраструктурой</p>
+                    <a href="#" class="btn">Начать защиту</a>
+                </div>
+                <img src="img/slide2.jpg" alt="Мониторинг">
+            </div>
         </div>
-    </section>
-
+        
+        <div class="slider-controls">
+            <button class="prev-slide">❮</button>
+            <div class="dots-container"></div>
+            <button class="next-slide">❯</button>
+        </div>
+    </div>
+</section>
     <section id="services">
         <div class="container">
             <h2>Наши услуги</h2>
-            <div class="service-item">
-                <h3><a href="website-protection.html">Защита веб-сайтов</a></h3>
-                <p>Обеспечиваем безопасность вашего сайта от любых видов DDoS-атак.</p>
+            <div class="services-grid">
+                <!-- Блоки с картинками -->
+                <div class="service-card image-card">
+                    <figure>
+                        <img src="img/web-protection.jpg" alt="Защита веб-сайтов" loading="lazy">
+                        <figcaption>Многоуровневая защита веб-ресурсов</figcaption>
+                    </figure>
+                    <h3>Защита сайтов</h3>
+                    <p>Полная защита от всех типов DDoS-атак с гарантией uptime 99.99%</p>
+                </div>
+    
+                <div class="service-card image-card">
+                    <figure>
+                        <img src="img/app-security.jpg" alt="Защита приложений" loading="lazy">
+                        <figcaption>Мобильные и веб-приложения</figcaption>
+                    </figure>
+                    <h3>Защита приложений</h3>
+                    <p>Комплексная защита API и backend-систем</p>
+                </div>
+    
+                <div class="service-card image-card">
+                    <figure>
+                        <img src="img/game-protection.jpg" alt="Игровые серверы" loading="lazy">
+                        <figcaption>Игровая индустрия</figcaption>
+                    </figure>
+                    <h3>Игровые серверы</h3>
+                    <p>Анти-DDoS решения для онлайн-игр</p>
+                </div>
+    
+                <!-- Блоки с видео -->
+                <div class="service-card video-card">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="img/2.mp4" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Как работает защита</h3>
+                    <p>Видеообзор нашей системы фильтрации трафика</p>
+                </div>
+    
+                <div class="service-card video-card">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://rr2---sn-4g5ednkl.googlevideo.com/videoplayback?expire=1744588998&ei=Zvz7Z5CpApqDkucPjMPqmA0&ip=2a09%3Abac1%3A76c0%3A3f0%3A%3Ab%3A23b&id=o-ACsut4ENh6QLCqcWJObOycuTxFnvVT8x3a0ybLZIp1xi&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AccgBcPczWO8xY4hifQL0qm39K3BTAARhFmsR4wu6RXNUDGVQCxsdopTvzEvrO4zxAdB11Vj-7JOJoZy&vprv=1&svpuc=1&mime=video%2Fmp4&ns=Y5dOC-LR5mVFTXtnl2S4Fx4Q&rqh=1&gir=yes&clen=5875493&ratebypass=yes&dur=74.861&lmt=1722038347335598&lmw=1&c=TVHTML5&sefc=1&txp=1208224&n=cd-rBCKqMoxuXQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhALPI5z2mySS4QsaNzk7Tp2gxvzY4xYbLhF4Ye8EGji-XAiEAyXVz-YXSNCLjLw00D2fgz27IEexRn_IHHzUi8ho7BlU%3D&title=Визуализация+DDoS+атаки&cm2rm=sn-o09sy7z&rrc=80,104&fexp=24350590,24350737,24350827,24350961,24351173,24351230,24351524,24351528,24351545,24351606,24351638&req_id=a5055aac895ba3ee&rms=ltu,au&redirect_counter=2&rm=sn-4g5erd7l&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1744567420,&mh=eA&mip=2a03:6f01:1:2::eab3&mm=34&mn=sn-4g5ednkl&ms=ltu&mt=1744566995&mv=m&mvi=2&pl=51&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRAIgZUzZTLG56CEGG55yQ9wpvETHhzsJ5CV676C4EeETEUQCIAbJVuejX73VDTrTpBJdt1VJikQDmEeirIZARh2yN7Yj" 
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Кейс-стади</h3>
+                    <p>Реальный пример отражения атаки 540 Гбит/с</p>
+                </div>
+    
+                <div class="service-card video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://vk.com/video_ext.php?oid=-114947209&id=456239020&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Наш дата-центр</h3>
+                    <p>Экскурсия по системе очистки трафика</p>
+                </div>
             </div>
-            <div class="service-item">
-                <h3><a href="app-protection.html">Защита приложений</a></h3>
-                <p>Защитите свои мобильные и веб-приложения от кибератак.</p>
+        </div>
+            <div class="nav-buttons">
+                <a href="website-protection.html" class="nav-btn">
+                    <i class="icon ion-md-globe"></i>
+                    Защита сайтов
+                </a>
+                
+                <a href="app-protection.html" class="nav-btn">
+                    <i class="icon ion-md-phone-portrait"></i>
+                    Защита приложений
+                </a>
+                
+                <a href="game-protection.html" class="nav-btn">
+                    <i class="icon ion-md-game-controller"></i>
+                    Игровые серверы
+                </a>
             </div>
-            <div class="service-item">
-                <h3><a href="game-protection.html">Защита игровых серверов</a></h3>
-                <p>Предотвращаем атаки на игровые серверы, обеспечивая стабильную работу.</p>
-            </div>
+    
+            <!-- Существующие service-items -->
         </div>
     </section>
 
+    <section id="about">
+        <div class="container">
+            <section class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <h2 class="about-title">О нашей компании</h2>
+                        
+                        <p class="about-description">
+                            <span class="about-highlight">12+ лет опыта</span> в сфере кибербезопасности. 
+                            Мы сочетаем передовые технологии с глубоким пониманием современных угроз...
+                        </p>
+                        
+                        <div class="about-divider"></div>
+                        
+                        <div class="about-features">
+                            <div class="feature-card">
+                                <i class="icon ion-md-shield feature-icon"></i>
+                                <h3>Многоуровневая защита</h3>
+                                <p>7-ступенчатая система фильтрации трафика</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i class="icon ion-md-time feature-icon"></i>
+                                <h3>24/7 Мониторинг</h3>
+                                <p>Круглосуточный контроль вашей инфраструктуры</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <script>// Показать/скрыть кнопку "Наверх"
+        window.addEventListener('scroll', () => {
+            const backButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 500) {
+                backButton.classList.add('visible');
+            } else {
+                backButton.classList.remove('visible');
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.querySelector('.dots-container');
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    // Создание точек
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if(index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    // Навигация
+    document.querySelector('.prev-slide').addEventListener('click', prevSlide);
+    document.querySelector('.next-slide').addEventListener('click', nextSlide);
+
+    // Автопереключение
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+    
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    slider.parentElement.addEventListener('mouseenter', stopAutoSlide);
+    slider.parentElement.addEventListener('mouseleave', startAutoSlide);
+    startAutoSlide();
+
+    function updateSlide() {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        document.querySelectorAll('.dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlide();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlide();
+    }
+
+    function goToSlide(index) {
+        currentIndex = index;
+        updateSlide();
+    }
+});
+// Добавьте этот скрипт
+document.getElementById('subscribeBtn').addEventListener('click', function() {
+    if(!this.classList.contains('subscribed')) {
+        this.classList.add('subscribed');
+        this.innerHTML = `
+            <i class="icon ion-md-checkmark"></i>
+            Вы подписаны!
+        `;
+        
+        // Показываем временное уведомление
+        const notification = document.createElement('div');
+        notification.className = 'subscribe-notification';
+        notification.textContent = '✅ Вы успешно подписались на обновления';
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+});</script>
+    
+
     <footer>
         <div class="container">
-            <p>&copy; 2023 Защита от DDoS-атак. Все права защищены.</p>
+        <a href="#" class="nav-btn back-to-top">
+            <i class="icon ion-md-arrow-up"></i>
+            Наверх
+        </a>
+        
+        <p>Нужна консультация? Звоните прямо сейчас: <br>
+            <span class="phone">+7 (495) 123-45-67</span> (круглосуточно)</p>
+            <p>Или напишите нам: <a href="mailto:shield@ddos-protect.ru">shield@ddos-protect.ru</a></p>
+            <p class="small-text">*Гарантируем ответ в течение 15 минут в рабочее время</p>
+            <p>&copy; 2025 Защита от DDoS-атак. Все права защищены.</p>
         </div>
+    </div>
+
     </footer>
 </body>
 </html>
